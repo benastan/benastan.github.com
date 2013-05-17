@@ -21,7 +21,7 @@
   font-style: normal;
 }
 
-.ss-icon, .ss-icon.ss-standard,
+.ss-standard-icon, .ss-icon, .ss-icon.ss-standard,
 [class^="ss-"]:before, [class*=" ss-"]:before,
 [class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before,
 [class^="ss-"].right:after, [class*=" ss-"].right:after,

@@ -3,16 +3,19 @@
 
 body {
   background: rgb(238, 237, 218);
+  font-family: prenton;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   color: #303030;
+  font-family: prenton;
 }
 
 .branded-headline {
   text-shadow: 0 -2px 0 #49869c;
   font-family: tangerine;
   line-height: 1em;
-  margin-bottom: .2em
+  margin: 0.5em 0;
+  font-size: 8em;
 }
 

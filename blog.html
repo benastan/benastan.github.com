@@ -4,19 +4,75 @@ title: Blog
 id: blog
 ---
 
-<hgroup>
-  <h1>
-    Le Blog
-  </h1>
-</hgroup>
-
-<div id="content">
-  <div class="container">
-    {% for post in site.posts %}
-    <div class="post">
-      <h2>{{ post.title }}</h2>
-      {{ post.content }}
+<div class="row">
+  <div class="large-8 large-centered columns">
+    <h1 class="branded-headline">Benjamin Bergstein</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="large-10 large-centered columns">
+    <div class="row collapse">
+      <div class="blog-navbar large-12 columns">
+        <div class="row collapse">
+          <div class="blog-navbar-category large-4 columns">
+            <span class="blog-navbar-category-icon ss-standard-icon">&#xEB80;</span>
+            Programming
+          </div>
+          <div class="large-8 columns"> </div>
+        </div>
+      </div>
     </div>
-    {% endfor %}
+    <div class="row collapse">
+      <div class="large-7 columns">
+        {% for post in site.posts %}
+        <div class="post">
+          <h2 class="blog-entry-headline">{{ post.title }}</h2>
+          <div class="blog-entry-content">
+            {{ post.content }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="blog-sidebar large-4 columns">
+        <div class="large-11 large-centered columns">
+          <div class="blog-sidebar-section large-12">
+            <h5 class="blog-sidebar-headline">Search blog</h5>
+            <input type="search" />
+          </div>
+          <div class="blog-sidebar-section large-12">
+            <h5 class="blog-sidebar-headline">Categories</h5>
+            <ul class="side-nav blog-sidebar-navigation">
+              <li>
+                <a href="/blog/food">Food & Cooking</a>
+              </li>
+              <li>
+                <a href="/blog/food">Programming</a>
+              </li>
+              <li>
+                <a href="/blog/food">Books & Media</a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog-sidebar-section large-12">
+            <h5 class="blog-sidebar-headline">Archive</h5>
+            <ul class="side-nav blog-sidebar-navigation">
+              <li><a href="/blog/food">May 2013</a></li>
+              <li><a href="/blog/food">April 2013</a></li>
+              <li><a href="/blog/food">March 2013</a></li>
+              <li><a href="/blog/food">February 2013</a></li>
+              <li><a href="/blog/food">January 2013</a></li>
+            </ul>
+          </div>
+          <div class="blog-sidebar-section large-12">
+            <h5 class="blog-sidebar-headline">Keep in Touch</h5>
+            <ul class="side-nav blog-sidebar-navigation">
+              <li><a href="http://www.github.com/benastan" alt="Github" title="Github" target="_BLANK"><span class="ss-icon">&#xF671;</span> &nbsp;&nbsp;Github</a></li>
+              <li><a href="http://www.twitter.com/benbergstein" target="_BLANK"><span class="ss-icon">&#xF611;</span> &nbsp;&nbsp;Twitter</a></li>
+              <li><a href="http://www.linkedin.com/in/benbergstein/" target="_BLANK"><span class="ss-icon">&#xF612;</span> &nbsp;&nbsp;Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

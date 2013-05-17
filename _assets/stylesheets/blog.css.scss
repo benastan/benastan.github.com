@@ -1,49 +1,103 @@
 #blog {
   margin: 0;
   padding: 0;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    background: rgb(238, 237, 218);
+.blog-navbar {
+  border-bottom: 1px solid #b1c7c3;
+}
+
+.blog-navbar-category {
+  color: #697d84;
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 2.55em;
+
+  strong {
+    color: #5e7076;
+    font-weight: 300;
   }
+}
 
-  .ligature {
-    line-height: 1em;
-  }
+.blog-navbar-category-icon {
+  position: relative;
+  top: 2px;
+  background: white;
+  border-radius: 33px;
+  border: 1px solid #ddd;
+  margin-right: 6px;
+  font-size: 0.95em;
+  padding: 3px 5px 0 3px;
 
-  h1 {
-    font-family: tangerine;
-    font-size: 8em;
-    line-height: 2em;
-    margin: 0;
-  }
+  color: white;
+  background: #697d84;
+  border: none;
+}
 
-  hgroup {
-    text-align: center;
-  }
+.blog-sidebar {
+  border-left: 1px solid #b1c7c3;
+  background: #d4ddd1;
+}
 
-  #content {
-    .container {
-      /*@include box-shadow(0 0 10px -6px black);*/
-      background: rgb(238, 238, 235);
-      padding: 30px;
-      /*@include border-top-right-radius(10px);*/
-      /*@include border-top-left-radius(10px);*/
-      min-height: 100%;
+.blog-sidebar-section {
+  margin: .75em 0 1em;
+}
 
-      .post {
-        width: 58em;
-        margin: 3em auto;
+.blog-sidebar-navigation {
+  &.side-nav {
+    padding: .2em 0;
 
-        h2 {
-          font-family: minion-pro;
+    li {
+      margin-bottom: .2em;
+
+      a {
+        display: block;
+        color: #697d84;
+        text-shadow: 0 1px 1px white;
+        position: relative;
+
+        &:hover {
+          left: 1px;
+          /*text-decoration: underline;*/
         }
 
-        p {
-          line-height: 2em;
+        &:active {
+          top: 1px;
         }
       }
     }
+  }
+}
+
+.blog-sidebar-headline {
+  font-weight: 600;
+  font-size: .8em;
+  border-bottom: 2px solid #C3CCCC;
+  color: #697272;
+  padding-bottom: 0.4em;
+}
+
+.blog-sidebar-profile-links {
+  margin: 1em 0;
+  letter-spacing: .25em;
+
+  a {
+    color: #303030;
+    font-size: 1.25em;
+  }
+}
+
+.blog-entry-headline {
+  text-shadow: 0 -1px 0 #49869c;
+  font-weight: 500;
+  margin: 0.7em 0 0.9em;
+}
+
+.blog-entry-content {
+  p {
+    color: #707070;
+    font-weight: 100;
+    font-size: 0.9em;
+    line-height: 1.8em;
   }
 }
